@@ -47,6 +47,9 @@
     @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.8; } }
 
     .hero-content { position: relative; z-index: 1; max-width: 1000px; margin: 0 auto; }
+    .hero-topbar { position: relative; z-index: 1; max-width: 1000px; margin: 0 auto 18px; display: flex; align-items: center; justify-content: center; }
+    .hero-logo { width: 220px; height: auto; filter: drop-shadow(0 8px 24px rgba(64,150,255,0.45)); opacity: 0.98; }
+    @media (max-width: 768px) { .hero-logo { width: 160px; } }
     .hero-badge {
       display: inline-block;
       background: rgba(255,255,255,0.2);
@@ -68,6 +71,7 @@
       animation: fadeInUp 1s ease-out 0.2s both;
     }
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    .catch-copy { font-size: 1.3rem; font-weight: 800; margin-bottom: 20px; opacity: 0.96; letter-spacing: .02em; animation: fadeInUp 1s ease-out 0.3s both; }
     .hero p { font-size: 1.15rem; margin-bottom: 44px; opacity: 0.95; animation: fadeInUp 1s ease-out 0.4s both; }
     .hero-service { font-weight: 800; letter-spacing: 0.04em; margin-bottom: 16px; opacity: 0.95; }
     .button-row { display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
@@ -239,14 +243,17 @@
         </div>
       </div>
     </div>
+    <div class="hero-topbar">
+      <img class="hero-logo" src="assets/logo.png" alt="バズナビ BuzzNavi ロゴ">
+    </div>
     <div class="hero-content">
       <div class="hero-badge">スマホSNS時代に最適化された成果重視の動画マーケティング</div>
+      <p class="catch-copy">SNSで採用をデザインする</p>
       <h1>動画・広告・LP・LINE。集客を動かす仕組みを、ワンストップで。</h1>
       <p>成果を出すマーケ・人事部門のための実行支援。</p>
       <p class="hero-service">SNS動画サービス</p>
       <div class="button-row">
-        <a class="cta-button" href="#contact">無料相談はこちら</a>
-        <a class="cta-button" href="#contact">資料をダウンロードする</a>
+        <a class="cta-button" href="#contact">資料請求</a>
       </div>
     </div>
   </section>
