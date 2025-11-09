@@ -47,9 +47,9 @@
     @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.8; } }
 
     .hero-content { position: relative; z-index: 1; max-width: 1000px; margin: 0 auto; }
-    .hero-topbar { position: relative; z-index: 1; max-width: 1000px; margin: 0 auto 18px; display: flex; align-items: center; justify-content: center; }
-    .hero-logo { width: 220px; height: auto; filter: drop-shadow(0 8px 24px rgba(64,150,255,0.45)); opacity: 0.98; }
-    @media (max-width: 768px) { .hero-logo { width: 160px; } }
+    .hero-topbar { position: relative; z-index: 1; max-width: 1000px; margin: 0 auto 0px; display: flex; align-items: center; justify-content: center; }
+    .hero-logo { width: 440px; height: auto; filter: drop-shadow(0 8px 24px rgba(64,150,255,0.45)); opacity: 0.98; }
+    @media (max-width: 768px) { .hero-logo { width: 320px; } }
     .hero-badge {
       display: inline-block;
       background: rgba(255,255,255,0.2);
@@ -296,7 +296,11 @@
           <p>LINEで個別フォロー・リピート化</p>
         </div>
       </div>
-      
+      <div class="highlight-box" style="margin-top:24px;">
+        <figure class="flow-figure">
+          <img src="assets/diagram-flow.png" alt="動画制作から獲得までの流れ（制作→広告→配信→認知拡大→LP誘導→LINE連携→問合せ獲得）" loading="lazy" decoding="async" onerror="this.src='assets/flow-diagram-placeholder.svg'">
+        </figure>
+      </div>
     </div>
   </section>
 
